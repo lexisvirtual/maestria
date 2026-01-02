@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestria Online | Lexis English Academy</title>
+    
+    <!-- Tailwind CSS (via CDN para facilitar visualização imediata) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração da Paleta de Cores Personalizada -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',      // Fundo principal
+                            soft: '#f59e0b33',    // Fundos suaves/overlays
+                            gray: '#94a3b8',      // Texto secundário
+                            gold: '#fbd24c',      // CTA Principal (Ação)
+                            neutral: '#798c8c',   // Divisores/Detalhes
+                            brown: '#8c5414',     // Destaques de autoridade
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .smooth-scroll { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-brand-dark text-white smooth-scroll antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- HEADER / NAV -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur border-b border-brand-neutral/20">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter text-white">
+                LEXIS <span class="text-brand-gold">ACADEMY</span>
+            </div>
+            <a href="#contato" class="hidden md:block bg-transparent border border-brand-gold text-brand-gold px-6 py-2 rounded-lg font-semibold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300">
+                Falar com Consultor
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden">
+        <!-- Background Glow Effect -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-soft blur-3xl rounded-full opacity-20 -z-10 transform translate-x-1/2"></div>
+
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 border border-brand-neutral/30 rounded-full bg-brand-dark/50 backdrop-blur">
+                <span class="text-brand-gold font-bold text-sm tracking-wide uppercase">Turmas Abertas 2026</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-8">
+                Fluência Funcional em <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-200">Apenas 8 Semanas.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-brand-gray max-w-2xl mx-auto mb-10 leading-relaxed">
+                A intensidade da sala de aula com a flexibilidade do digital. 
+                120 horas de imersão ao vivo para quem não pode perder anos estudando errado.
+            </p>
+
+            <ul class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mb-12 text-brand-gray text-sm md:text-base">
+                <li class="flex items-center gap-2 justify-center">
+                    <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    Aulas 100% Ao Vivo
+                </li>
+                <li class="flex items-center gap-2 justify-center">
+                    <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    Garantia Vitalícia
+                </li>
+                <li class="flex items-center gap-2 justify-center">
+                    <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    Método Acelerado
+                </li>
+            </ul>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contato" class="bg-brand-gold text-black font-bold text-lg px-8 py-4 rounded hover:bg-white transition-colors duration-300 shadow-[0_0_20px_rgba(251,210,76,0.3)]">
+                    Quero Saber Como Funciona
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. O PROBLEMA -->
+    <section class="py-20 bg-white text-brand-dark px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Por que você ainda não fala inglês?</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-brand-dark/80 text-lg leading-relaxed mb-6">
+                        Você já tentou. Comprou cursos gravados que nunca terminou, baixou aplicativos que só ensinam frases soltas ou matriculou-se em escolas tradicionais que levam <strong>anos para entregar o básico.</strong>
+                    </p>
+                    <p class="text-brand-dark/80 text-lg leading-relaxed">
+                        O problema não é você. O problema é o método passivo. Assistir vídeos não cria fluência. Sem interação real e pressão positiva, o cérebro não retém o idioma.
+                    </p>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-xl border-l-4 border-brand-brown">
+                    <h3 class="font-bold text-brand-brown mb-4">O ciclo da frustração:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 font-bold">✕</span>
+                            <span class="text-slate-600">Falta de tempo para deslocamento</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 font-bold">✕</span>
+                            <span class="text-slate-600">Vergonha de falar na frente dos outros</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 font-bold">✕</span>
+                            <span class="text-slate-600">Sensação de estar "jogando dinheiro fora"</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. A SOLUÇÃO -->
+    <section class="py-20 bg-brand-dark px-6 border-t border-brand-neutral/10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold tracking-wider uppercase text-sm">Metodologia Exclusiva</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-2">Maestria Online: Imersão Ativa</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-dark border border-brand-neutral/20 p-8 rounded-2xl hover:border-brand-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-brand-soft rounded-lg flex items-center justify-center text-brand-gold mb-6 font-bold text-xl">01</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Aula Invertida</h3>
+                    <p class="text-brand-gray">Você se prepara antes. Na aula ao vivo, o foco é 100% prática, correção e conversação. Sem tempo perdido com teoria passiva.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-dark border border-brand-neutral/20 p-8 rounded-2xl hover:border-brand-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-brand-soft rounded-lg flex items-center justify-center text-brand-gold mb-6 font-bold text-xl">02</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Repetição Espaçada</h3>
+                    <p class="text-brand-gray">Utilizamos tecnologia (Memrise) para garantir que o vocabulário novo vá para sua memória de longo prazo.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-dark border border-brand-neutral/20 p-8 rounded-2xl hover:border-brand-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-brand-soft rounded-lg flex items-center justify-center text-brand-gold mb-6 font-bold text-xl">03</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Instrutor + IA</h3>
+                    <p class="text-brand-gray">Professores reais ao vivo combinados com "Gab English Teacher" (IA no WhatsApp) para treino 24h por dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. POR QUE ESCOLHER (Diferenciais) -->
+    <section class="py-20 bg-brand-soft px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                        Mais do que um curso.<br>
+                        Um compromisso com seu resultado.
+                    </h2>
+                    <p class="text-brand-gray mb-8">
+                        Ao contrário de apps gratuitos ou aulas particulares isoladas, a Lexis entrega uma estrutura pedagógica robusta.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Garantia Vitalícia (Exclusivo)</h4>
+                                <p class="text-brand-gray text-sm">Refaça o curso quantas vezes precisar, sem custo adicional. Seu investimento é único e seguro.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">120 Horas de Carga Horária</h4>
+                                <p class="text-brand-gray text-sm">Intensidade real. 3 horas por noite, de segunda a sexta. Uma imersão sem sair de casa.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-gold flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Formato Híbrido Inteligente</h4>
+                                <p class="text-brand-gray text-sm">Plataforma Teaches para organização + Ferramentas interativas (ChatClass/Memrise).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-dark p-8 md:p-10 rounded-xl border border-brand-neutral/30 relative">
+                    <div class="absolute -top-4 -right-4 bg-brand-brown text-white text-xs font-bold px-4 py-2 rounded uppercase tracking-wider">Destaque</div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Comparativo Rápido</h3>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="grid grid-cols-3 gap-4 border-b border-brand-neutral/20 pb-2">
+                            <span class="text-brand-gray">Característica</span>
+                            <span class="text-center text-brand-gold font-bold">Lexis</span>
+                            <span class="text-center text-brand-neutral">Outros</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 py-2">
+                            <span class="text-white">Aulas Ao Vivo</span>
+                            <span class="text-center text-brand-gold">Diárias</span>
+                            <span class="text-center text-brand-neutral">1x/sem ou zero</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 py-2 bg-brand-white/5">
+                            <span class="text-white">Garantia</span>
+                            <span class="text-center text-brand-gold">VITALÍCIA</span>
+                            <span class="text-center text-brand-neutral">7 dias</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 py-2">
+                            <span class="text-white">Duração</span>
+                            <span class="text-center text-brand-gold">8 Semanas (Rápido)</span>
+                            <span class="text-center text-brand-neutral">18 a 36 meses</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <p class="text-brand-gray text-xs mb-2">Turmas limitadas para garantir qualidade.</p>
+                        <a href="#contato" class="text-brand-gold hover:text-white font-bold border-b border-brand-gold hover:border-white transition-all pb-0.5">Verificar disponibilidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. COMO FUNCIONA NA PRÁTICA (O Curso) -->
+    <section class="py-20 bg-brand-dark px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold text-white">Sua Jornada em 4 Passos</h2>
+            <p class="text-brand-gray mt-4">Do básico à confiança total em 2 meses.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Passo 1 -->
+            <div class="bg-gradient-to-b from-slate-800 to-transparent p-6 rounded-lg border-t-2 border-brand-neutral">
+                <span class="text-4xl mb-4 block">🏁</span>
+                <h3 class="text-lg font-bold text-white mb-2">1. START</h3>
+                <p class="text-sm text-brand-gray">Foco em <strong>Fonética</strong>. Destravamos sua fala corrigindo vícios e introduzindo phrasal verbs essenciais.</p>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="bg-gradient-to-b from-slate-800 to-transparent p-6 rounded-lg border-t-2 border-brand-neutral">
+                <span class="text-4xl mb-4 block">🏃</span>
+                <h3 class="text-lg font-bold text-white mb-2">2. RUN</h3>
+                <p class="text-sm text-brand-gray">Domínio de <strong>Estruturas</strong>. Gramática aplicada de forma simples e complexa para construir frases sem pensar.</p>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="bg-gradient-to-b from-slate-800 to-transparent p-6 rounded-lg border-t-2 border-brand-neutral">
+                <span class="text-4xl mb-4 block">✈️</span>
+                <h3 class="text-lg font-bold text-white mb-2">3. FLY</h3>
+                <p class="text-sm text-brand-gray">Expansão de <strong>Vocabulário</strong>. Foco nas 600-700 palavras mais usadas no cotidiano e trabalho.</p>
+            </div>
+
+            <!-- Passo 4 -->
+            <div class="bg-gradient-to-b from-slate-800 to-transparent p-6 rounded-lg border-t-2 border-brand-gold shadow-[0_-5px_15px_rgba(251,210,76,0.1)]">
+                <span class="text-4xl mb-4 block">🗽</span>
+                <h3 class="text-lg font-bold text-brand-gold mb-2">4. LIBERTY</h3>
+                <p class="text-sm text-brand-gray">Total <strong>Conversação</strong>. Fluência e compreensão auditiva (Listening 70%+) em conversas naturais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PARA QUEM É -->
+    <section class="py-20 bg-white text-brand-dark px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Este curso é para você?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Para quem é -->
+                <div>
+                    <h3 class="font-bold text-xl mb-6 flex items-center gap-2 text-green-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Para Quem É
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 text-slate-700">
+                            <span class="font-bold text-green-600">✓</span>
+                            Profissionais que precisam de inglês para subir de cargo.
+                        </li>
+                        <li class="flex gap-3 text-slate-700">
+                            <span class="font-bold text-green-600">✓</span>
+                            Quem busca recolocação rápida no mercado.
+                        </li>
+                        <li class="flex gap-3 text-slate-700">
+                            <span class="font-bold text-green-600">✓</span>
+                            Estudantes com pressa e pouco tempo para viajar.
+                        </li>
+                        <li class="flex gap-3 text-slate-700">
+                            <span class="font-bold text-green-600">✓</span>
+                            Níveis Básico a Intermediário-Baixo.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Para quem NÃO é -->
+                <div>
+                    <h3 class="font-bold text-xl mb-6 flex items-center gap-2 text-red-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Para Quem NÃO É
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 text-slate-500">
+                            <span class="font-bold text-red-500">✕</span>
+                            Quem procura fórmulas mágicas sem estudo.
+                        </li>
+                        <li class="flex gap-3 text-slate-500">
+                            <span class="font-bold text-red-500">✕</span>
+                            Alunos já Avançados/Fluentes.
+                        </li>
+                        <li class="flex gap-3 text-slate-500">
+                            <span class="font-bold text-red-500">✕</span>
+                            Quem não pode dedicar 3h à noite para a transformação.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA FINAL -->
+    <section id="contato" class="py-24 bg-brand-dark px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-soft opacity-10"></div>
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Não deixe para 2027.</h2>
+            <p class="text-brand-gray text-lg mb-10">
+                As turmas são limitadas para garantir a qualidade da interação ao vivo. 
+                Receba a ementa completa, valores detalhados e verifique a disponibilidade para a próxima turma.
+            </p>
+            
+            <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-lg mx-auto backdrop-blur">
+                <p class="text-brand-gold font-bold mb-6 text-sm uppercase tracking-wide">Fale com um Especialista</p>
+                <div class="flex flex-col gap-4">
+                    <a href="#" class="block w-full bg-brand-gold text-black font-bold py-4 rounded hover:bg-white transition-colors text-center text-lg">
+                        Solicitar Proposta e Valores
+                    </a>
+                    <a href="#" class="block w-full border border-brand-gray/50 text-brand-gray font-semibold py-4 rounded hover:border-white hover:text-white transition-colors text-center">
+                        Tirar Dúvidas via WhatsApp
+                    </a>
+                </div>
+                <p class="mt-4 text-xs text-brand-neutral">
+                    *Garantia Vitalícia inclusa em todas as matrículas desta temporada.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 py-12 px-6 border-t border-brand-neutral/10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="font-bold text-white text-lg">LEXIS ENGLISH ACADEMY</h4>
+                <p class="text-brand-neutral text-sm mt-2">
+                    Rua Visconde de Inhaúma, 1295<br>
+                    São Carlos – SP
+                </p>
+            </div>
+            <div class="text-brand-neutral text-sm text-center md:text-right">
+                <p>&copy; 2026 Lexis Academy. Todos os direitos reservados.</p>
+                <p class="mt-1">CNPJ: 38.229.678/0001-13</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
